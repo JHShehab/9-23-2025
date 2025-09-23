@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Nav Start -->
+    <div class="navbar bg-base-100 shadow-sm fixed top-0 left-0 z-1">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class=""><img class="w-20 h-20" src="wolf.png" alt="wolf"></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-2xl font-bold">
+                <li class="hover:bg-neutral-400"><a href="index.html">Home</a></li>
+                <li class="hover:bg-neutral-400"><a href="about.html">About</a></li>
+                <li class="hover:bg-neutral-400"><a href="Gallery.html">Gallery</a></li>
+                <li class="hover:bg-neutral-400"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end gap-4 text-2xl">
+            <a class="">
+                <p><i class="fa-brands fa-facebook"></i></p>
+            </a>
+            <a class="">
+                <p><i class="fa-brands fa-whatsapp"></i></p>
+            </a>
+            <a class="">
+                <p><i class="fa-brands fa-instagram"></i></p>
+            </a>
+            <a class="">
+                <p><i class="fa-brands fa-linkedin-in"></i></p>
+            </a>
+        </div>
+    </div>
+    <!-- Nav End -->
+    <!-- Hero Start -->
+
+    <div class="hero min-h-screen" style="background-image: url(nature.jpg);">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!-- hero End -->
+    <!-- caroysel start -->
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+            <img src="forest 1.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+    </div>
+    <!-- carousel end -->
+    <!-- Card section start -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+
+        <div class="card bg-zinc-400 w-full shadow-sm">
+            <figure class="px-10 pt-10">
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
+                    class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Card Title</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-zinc-400 w-full shadow-sm">
+            <figure class="px-10 pt-10">
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
+                    class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Card Title</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-zinc-400 w-full shadow-sm">
+            <figure class="px-10 pt-10">
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
+                    class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Card Title</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Card section end -->
+    <!-- Footer Start -->
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>Copyright © Shehab - All right reserved by JHS Industries Ltd</p>
+        </aside>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
